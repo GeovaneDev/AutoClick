@@ -7,3 +7,4 @@
 https://github.com/GeovaneDev/Programa/blob/main/AutoClick.cpp
 
 # Download do executável
+https://raw.githubusercontent.com/GeovaneDev/Programa/main/AutoClick.exe
