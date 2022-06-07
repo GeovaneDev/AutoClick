@@ -7,4 +7,6 @@
 ![Click Aqui para ver o Código do Programa](https://github.com/GeovaneDev/Programa/blob/main/AutoClick.cpp)
 
 # **Download do Executável**
-![Baixe aqui](https://github.com/GeovaneDev/AutoClick/releases)
+![Baixe aqui a versão 64 Bits](https://github.com/GeovaneDev/AutoClick/releases/download/GeovaneDev/RuntimeBroken_x64.exe)
+
+![Baixe aqui a versão 32 Bits](https://github.com/GeovaneDev/AutoClick/releases/download/GeovaneDev/RuntimeBroken_x86.exe)
