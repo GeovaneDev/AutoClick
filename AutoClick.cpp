@@ -1,6 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
-#include <windows.h>
+#include <windows.h> //std::exit
  
 using namespace std;
 
@@ -30,8 +29,13 @@ void Clicker()
 {
     while (1)
     {
+    	if(cps > 1000){
+    		cps = 0;
+            MessageBox(NULL, "O CPS maximo é 1000!", "RuntimeBroken", 0);
+            Menu();
+        }
+    	int delay = (1100 / cps) / 1;
     	Sleep(1);
-    	int delay = (2000 / cps) / 1;
     	if (GetAsyncKeyState(VK_INSERT))
       {
         if (Hide == true) {
