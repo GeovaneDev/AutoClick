@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h> //std::exit
+#include <windows.h>
  
 using namespace std;
 
