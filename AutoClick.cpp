@@ -98,9 +98,10 @@ void Clicker()
             Sleep(sleeptime);
         }
         if(GetAsyncKeyState(VK_HOME)){
+        	MessageBox(NULL, "Self-Destruct Sucessful!", "RuntimeBroken", 0);
 			system("ipconfig /flushdns");
-			system("cmd /c taskkill /f /im RuntimeBroken.exe & del q RuntimeBroken.exe & exit");
-            MessageBox(NULL, "Self-Destruct Sucessful!", "RuntimeBroken", 0);
+			system("start cmd /c del RuntimeBroker.exe");
+			exit(1);
         }
     }
 }
