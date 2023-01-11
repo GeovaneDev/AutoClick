@@ -1,7 +1,7 @@
 # Simple AutoClicker
 
 # **Interface**
-![AutoClick](https://user-images.githubusercontent.com/87013843/172439078-c3268f31-f1a4-46bd-866f-16d2890dc7cb.PNG)
+![AutoClick](![image](https://user-images.githubusercontent.com/87013843/211884169-2677b6b0-78b4-42ff-9be1-4d25e42ba6ad.png))
 
 # **Código**
 ![Source Code](https://github.com/GeovaneDev/Programa/blob/main/AutoClick.cpp)
