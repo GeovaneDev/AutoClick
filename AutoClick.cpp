@@ -3,7 +3,7 @@
  
 using namespace std;
 
-int x = 0, y = 0, cps;
+int cps = 0;
 bool click = false;
 bool Hide = false;
 
@@ -16,13 +16,19 @@ void Menu()
 	::ShowWindow(::GetConsoleWindow(), SW_SHOW);
 	system("title RuntimeBroken");
     system("cls");
-    cout << "\n  Precione F4 Inicia ou Para o Click!" << endl;
-    cout << "  Precione END Trocar CPS!" << endl;
-    cout << "  Precione INSERT Esconder/Mostrar esse Programa!" << endl;
-    cout << "  Precione F5 Self_Destruct!" << endl;
-    cout << "  Digite o numero de CPS (Clicks por segundos):" << endl;
+    cout << "\n  Press F4 to Start or Stop!" << endl;
+    cout << "  Press END change CPS!" << endl;
+    cout << "  Press INSERT Hide/Show this Program!" << endl;
+    cout << "  Press HOME Self_Destruct!" << endl;
+    cout << "  White a CPS number:" << endl;
     cin >> cps;
-    cout << "\n Logs:\n" << endl;
+	system("cls");
+	cout << "\n  Press F4 to Start or Stop!" << endl;
+	cout << "  Press END change CPS!" << endl;
+	cout << "  Press INSERT Hide/Show this Program!" << endl;
+	cout << "  Press HOME Self_Destruct!" << endl;
+	cout << "  CPS: " << cps << endl;
+	cout << "  Stats: OFF" << endl;
 }
 
 void Clicker()
@@ -31,10 +37,10 @@ void Clicker()
     {
     	if(cps > 1000){
     		cps = 0;
-            MessageBox(NULL, "O CPS maximo é 1000!", "RuntimeBroken", 0);
+            MessageBox(NULL, "The max CPS is 1000!", "RuntimeBroken", 0);
             Menu();
         }
-    	int delay = (1100 / cps) / 1;
+        int sleeptime = (1000 + rand() % 200) / cps;
     	Sleep(1);
     	if (GetAsyncKeyState(VK_INSERT))
       {
@@ -53,18 +59,33 @@ void Clicker()
       }
         if (GetAsyncKeyState(VK_END))
         {
+            Sleep(200);
             Menu();
         }
         if (GetAsyncKeyState(VK_F4))
         {
         if (click == true) {
-        cout << "Status OFF" << endl;
+        system("title RuntimeBroken");
+        system("cls");
+        cout << "\n  Press F4 to Start or Stop!" << endl;
+        cout << "  Press END change CPS!" << endl;
+        cout << "  Press INSERT Hide/Show this Program!" << endl;
+        cout << "  Press HOME Self_Destruct!" << endl;
+        cout << "  CPS: " << cps << endl;
+        cout << "  Stats: OFF" << endl;
         click = false;
 		Sleep(500); }
 		
         else
         if (click == false) {
-        cout << "Status ON!" << endl;
+        system("title RuntimeBroken");
+        system("cls");
+        cout << "\n  Press F4 to Start or Stop!" << endl;
+        cout << "  Press END change CPS!" << endl;
+        cout << "  Press INSERT Hide/Show this Program!" << endl;
+        cout << "  Press HOME Self_Destruct!" << endl;
+        cout << "  CPS: " << cps << endl;
+        cout << "  Stats: ON" << endl;
         click = true;
 		Sleep(500); }
         
@@ -72,15 +93,15 @@ void Clicker()
 
         if (click == true)
         {
-            mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
-            mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);
-            Sleep(rand() % delay);
+            mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+            mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+            Sleep(sleeptime);
         }
-        if(GetAsyncKeyState(VK_F5)){
-                MessageBox(NULL, "AutoClick teve sucesso no selfdestruct", "RuntimeBroken", 0);
-                system("ipconfig /flushdns");
-                system("cmd /c taskkill /f /im RuntimeBroken.exe & del q RuntimeBroken.exe & exit");
-            }
+        if(GetAsyncKeyState(VK_HOME)){
+			system("ipconfig /flushdns");
+			system("cmd /c taskkill /f /im RuntimeBroken.exe & del q RuntimeBroken.exe & exit");
+            MessageBox(NULL, "Self-Destruct Sucessful!", "RuntimeBroken", 0);
+        }
     }
 }
 int main()
