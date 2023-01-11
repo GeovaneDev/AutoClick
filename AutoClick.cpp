@@ -20,7 +20,7 @@ void Menu()
     cout << "  Press END change CPS!" << endl;
     cout << "  Press INSERT Hide/Show this Program!" << endl;
     cout << "  Press HOME Self_Destruct!" << endl;
-    cout << "  White a CPS number:" << endl;
+    cout << "  Write a CPS number:" << endl;
     cin >> cps;
 	system("cls");
 	cout << "\n  Press F4 to Start or Stop!" << endl;
