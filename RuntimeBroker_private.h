@@ -11,13 +11,13 @@
 #define VER_RELEASE	19041
 #define VER_BUILD	746
 #define COMPANY_NAME	""
-#define FILE_VERSION	"10.0.19041.3636"
+#define FILE_VERSION	"10.0.19041.746"
 #define FILE_DESCRIPTION	"Runtime Broker"
 #define INTERNAL_NAME	""
 #define LEGAL_COPYRIGHT	"© Microsoft Corporation. All rights reserved."
 #define LEGAL_TRADEMARKS	""
 #define ORIGINAL_FILENAME	"RuntimeBroker.exe"
 #define PRODUCT_NAME	"Microsoft® Windows® Operating System"
-#define PRODUCT_VERSION	"10.0.19041.3636"
+#define PRODUCT_VERSION	"10.0.19041.746"
 
 #endif /*RUNTIMEBROKER_PRIVATE_H*/
