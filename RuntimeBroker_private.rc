@@ -1,0 +1,34 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 10,0,19041,746
+PRODUCTVERSION 10,0,19041,746
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "CompanyName", ""
+      VALUE "FileVersion", "10.0.19041.3636"
+      VALUE "FileDescription", "Runtime Broker"
+      VALUE "InternalName", ""
+      VALUE "LegalCopyright", "© Microsoft Corporation. All rights reserved."
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", "RuntimeBroker.exe"
+      VALUE "ProductName", "Microsoft® Windows® Operating System"
+      VALUE "ProductVersion", "10.0.19041.3636"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0409, 1252
+  }
+}
