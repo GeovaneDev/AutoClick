@@ -17,14 +17,14 @@ FILETYPE VFT_APP
     BLOCK "040904E4"
     {
       VALUE "CompanyName", ""
-      VALUE "FileVersion", "10.0.19041.746"
-      VALUE "FileDescription", "Runtime Broker"
+      VALUE "FileVersion", ""
+      VALUE "FileDescription", ""
       VALUE "InternalName", ""
-      VALUE "LegalCopyright", "© Microsoft Corporation. All rights reserved."
+      VALUE "LegalCopyright", ""
       VALUE "LegalTrademarks", ""
-      VALUE "OriginalFilename", "RuntimeBroker.exe"
-      VALUE "ProductName", "Microsoft® Windows® Operating System"
-      VALUE "ProductVersion", "10.0.19041.746"
+      VALUE "OriginalFilename", ""
+      VALUE "ProductName", ""
+      VALUE "ProductVersion", ""
     }
   }
   BLOCK "VarFileInfo"
